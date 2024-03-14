@@ -1,0 +1,31 @@
+{
+  "name": "presigned-url-s3-upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx ./src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "once": "npm run build && npm run start",
+    "lint": "eslint .",
+    "lint.fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "tsx": "^4.7.1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.533.0",
+    "@aws-sdk/credential-providers": "^3.533.0",
+    "@aws-sdk/s3-request-presigner": "^3.533.0",
+    "@types/node": "^20.11.27",
+    "aws-sdk": "^2.1571.0",
+    "nodemailer": "^6.9.11"
+  }
+}
